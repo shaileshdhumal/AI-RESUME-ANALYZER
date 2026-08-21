@@ -41,7 +41,8 @@ function App() {
     formData.append('job_description', jobDescription)
 
     try {
-      const res = await fetch('http://localhost:8000/analyze', {
+      const apiBaseUrl = import.meta.env.VITE_API_URL || ''
+      const res = await fetch(`${apiBaseUrl}/api/analyze`, {
         method: 'POST',
         body: formData,
       })

@@ -1,0 +1,11 @@
+.git
+.env
+.venv
+venv
+__pycache__
+*.pyc
+samples
+streamlit_app.py
+test_parser.py
+frontend/node_modules
+frontend/dist
