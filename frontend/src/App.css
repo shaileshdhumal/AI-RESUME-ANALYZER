@@ -1,0 +1,94 @@
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background: #f0f2f5;
+  color: #1a1a2e;
+}
+
+.app { max-width: 720px; margin: 0 auto; padding: 32px 16px; }
+
+header { text-align: center; margin-bottom: 24px; }
+header h1 { margin: 0; font-size: 2rem; }
+header p { color: #666; }
+
+.card {
+  background: #fff;
+  border-radius: 12px;
+  padding: 24px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+.dropzone {
+  border: 2px dashed #b0b8c4;
+  border-radius: 10px;
+  padding: 40px 20px;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.2s;
+  color: #666;
+  margin-bottom: 16px;
+}
+.dropzone:hover, .dropzone.dragging {
+  border-color: #4f6ef7;
+  background: #f5f8ff;
+  color: #4f6ef7;
+}
+
+.filename { color: #1a1a2e; font-weight: 600; }
+
+.jobdesc {
+  width: 100%;
+  min-height: 100px;
+  border: 1px solid #d0d5dd;
+  border-radius: 8px;
+  padding: 12px;
+  font-family: inherit;
+  font-size: 0.95rem;
+  resize: vertical;
+  margin-bottom: 16px;
+}
+
+.btn {
+  width: 100%;
+  background: #4f6ef7;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 14px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.btn:hover { background: #3d5bf0; }
+.btn:disabled { background: #a5b0e8; cursor: not-allowed; }
+
+.error { color: #d93025; margin-top: 12px; }
+
+.score-row { display: flex; align-items: center; gap: 24px; margin-bottom: 16px; }
+.big-score { font-size: 3rem; font-weight: 700; color: #4f6ef7; }
+.big-score span { font-size: 1.2rem; color: #999; }
+.verdict { color: #444; font-style: italic; }
+
+.cols { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-bottom: 12px; }
+
+h2 { margin-top: 0; }
+h3 { font-size: 0.95rem; margin: 12px 0 8px; }
+h3.good { color: #188038; }
+h3.bad { color: #d93025; }
+
+.chips { display: flex; flex-wrap: wrap; gap: 8px; }
+.chip { background: #eef1ff; color: #4f6ef7; padding: 4px 12px; border-radius: 999px; font-size: 0.85rem; }
+.chip.good { background: #e6f4ea; color: #188038; }
+.chip.bad { background: #fce8e6; color: #d93025; }
+.chip.tip { background: #fef7e0; color: #b06000; }
+
+.summary {
+  background: #f5f8ff;
+  border-left: 4px solid #4f6ef7;
+  padding: 12px;
+  border-radius: 4px;
+}

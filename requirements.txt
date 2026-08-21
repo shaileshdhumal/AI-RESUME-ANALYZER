@@ -1,0 +1,10 @@
+pdfplumber==0.11.4
+python-docx==1.1.2
+groq
+python-dotenv
+fastapi
+uvicorn
+python-multipart
+streamlit
+pandas
+openai
